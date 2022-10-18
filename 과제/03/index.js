@@ -9,7 +9,7 @@ const resultText = document.querySelector(".result-text");
 
 function submitEvent(event) {
     event.preventDefault();
-    if(generateInput.value < guessInput.value ){
+    if (parseInt(generateInput.value) < parseInt(guessInput.value)) {
         return alert("유효한 숫자를 입력해주세요");
     }
     const randomNumber = Math.ceil(Math.random() * generateInput.value)
@@ -17,7 +17,6 @@ function submitEvent(event) {
     userNumber.innerText = `You chose ${guessInput.value},`;
     machineNumber.innerText = `machine chose: ${randomNumber}`;
 
-    // if (parseInt(guessInput.value) === randomNumber) {
     if (+guessInput.value === randomNumber) {
         resultText.innerText = "You win";
     } else {
