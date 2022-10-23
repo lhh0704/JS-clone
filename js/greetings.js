@@ -4,7 +4,7 @@ const USERNAME_KEY = "username";
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {
-  location.href = '/index.html'
+  location.href = '/'
 } else {
   greeting.innerText = `Hello ${savedUsername}!`;
 }
