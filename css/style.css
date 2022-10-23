@@ -1,0 +1,232 @@
+.hidden {
+    display: none;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+}
+
+
+.section {
+    position: fixed;
+    width: 900px;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgba(255, 255,255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+} 
+
+.content{
+    padding: 10px 30px;
+
+}
+
+.control{
+    background-color: #EDEBF0;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    
+}
+
+.control_btn-close{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #EC6A5F;
+    margin-right: 5px;
+}
+.control_btn-put{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin-right: 5px;
+    background-color: #F5C250;
+}
+.control_btn-expansion{
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #62C856;
+}
+.content-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px;
+    
+}
+.content-top h1 {
+    margin: 0px;
+}
+.content-second{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.today{
+    width: 830px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #BABABA;
+}
+
+.today h2{
+  margin: 0px;
+}
+
+.time{
+    width: 220px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#quote{
+    width: 600px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+   
+}
+
+#quote span{
+    line-height: 60px;
+}
+
+.section_third{
+    display: flex;
+    justify-content: space-around;
+    width: 840px;
+    height: 318px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    padding: 20px;
+}
+.section_third_todolist{
+    width: 50%;
+    text-align: center;
+}
+
+.section_third_todolist-tag{
+    width: 80px;
+    height: 24px;
+    border-radius: 10px;
+    background-color: #62C856;
+    margin:0 auto;
+    margin-bottom: 10px;
+    padding-top: 4px;
+}
+
+#todo-form input{
+    width: 350px;
+    height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: white;
+}
+
+.nav{
+    position: fixed;
+    bottom: 30px;
+    right: 750px;
+}
+
+.nav img{
+    width: 60px;
+    height: 60px;
+}
+
+.nave_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.nav_top{
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 7px 15px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px 10px ;
+    
+}
+.nav_top-r{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 15%;
+    justify-content: space-around;
+    
+}
+.nav_top-r img{
+    width: 20px;
+    height: 20px;
+}
+
+.nav_top-r_bold{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.nav_top-r_light{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.file{
+    position: absolute;
+    right: 60px;
+    top:60px
+}
+
+.file_m{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.file img{
+    width: 110px;
+    height: 100px;
+}
+.file h6{
+    margin:0px;
+    color: white;
+    font-size: 13px;
+    text-shadow: black 2px 0 12px;
+}
