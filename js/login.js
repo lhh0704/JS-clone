@@ -9,7 +9,7 @@ const USERNAME_KEY = "username";
     const username = loginInput.value;
     if (username) {
         localStorage.setItem(USERNAME_KEY, username);
-        return location.href = '/JS-clone/home.html'
+        return location.href = 'home.html'
     }
 
     alert("로그인 필요")
@@ -18,7 +18,7 @@ const USERNAME_KEY = "username";
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername !== null) {
-    location.href = '/JS-clone/home.html'
+    location.href = 'home.html'
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
