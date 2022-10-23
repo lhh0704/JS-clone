@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  <link rel="stylesheet" href="css/todo.css" />
+  <link href='util/fullcalendar-5.11.3/lib/main.css' rel='stylesheet' />
+  <script src='util/fullcalendar-5.11.3/lib/main.js'></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth'
+      });
+      calendar.render();
+    });
+
+  </script>
+  <title>Momentum App</title>
+</head>
+
+<body>
+  <div class="nav_top">
+    <div class="nav_top-r">
+      <div><img src="img/icon-apple.png"> </div>
+      <h6 class="nav_top-r_bold">Todolist</h6>
+      <h6 class="nav_top-r_light">File</h6>
+      <h6 class="nav_top-r_light">Edit</h6>
+      <h6 class="nav_top-r_light">View</h6>
+    </div>
+  </div>
+  <div class="file">
+    <div class="file_m">
+      <img src="img/icon-file.png">
+      <h6>Kokoa-Clone</h6>
+    </div>
+    <div class="file_m">
+      <img src="img/icon-file.png">
+      <h6>Js-Clone</h6>
+    </div>
+    <div class="file_m">
+      <img src="img/icon-file.png">
+      <h6>Study</h6>
+    </div>
+  </div>
+  <div class="section">
+    <div class="control">
+      <div class="control_btn"></div>
+      <div class="control_btn-close"></div>
+      <div class="control_btn-put"></div>
+      <div class="control_btn-expansion"></div>
+    </div>
+
+    <div class="content">
+      <div class="content-top">
+        <h1 id="greeting"></h1>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="today">
+        <h2 id="day">날짜</h2>
+      </div>
+      <div class="content-second">
+        <div class="time">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="section_third">
+        <div id='calendar'></div>
+        
+        <div class="todo-wrapper">
+          <div class="todo-title">To Do List</div>
+          
+          <div class="todo-box">
+              <div class="todo-input-box">
+                  <input type="text" class="todo-input" placeholder="Write a To Do and Press Enter">
+              </div>
+              
+              <ul class="todo-list"></ul>
+              
+          </div>
+         
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="nave_icon">
+      <div><img src="img/icon1.png"></div>
+      <div><img src="img/icon2.png"></div>
+      <div><img src="img/icon3.png"></div>
+      <div><img src="img/icon4.png"></div>
+      <div><img src="img/icon5.png"></div>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="js/greetings.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/day.js"></script>
+  <script src="js/todolist.js"></script>
+
+</body>
+
+</html>
